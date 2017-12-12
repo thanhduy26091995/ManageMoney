@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_15dp"
+        android:layout_marginRight="@dimen/margin_padding_15dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewRegularHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_20dp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/margin_padding_10dp"
+            android:paddingRight="@dimen/margin_padding_10dp"
+            android:text="@string/login_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_10dp"
+            android:background="@drawable/background_login_facebook_google"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_padding_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/space_96"
+                android:layout_height="@dimen/space_96"
+                android:layout_gravity="center|left"
+                android:src="@drawable/ic_facebook" />
+
+            <TextView
+                style="@style/TextViewRegularNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_padding_10dp"
+                android:gravity="left"
+                android:text="Đăng nhập bằng Facebook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_10dp"
+            android:background="@drawable/background_login_facebook_google"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_padding_10dp">
+
+            <ImageView
+                android:layout_width="@dimen/space_96"
+                android:layout_height="@dimen/space_96"
+                android:layout_gravity="center|left"
+                android:src="@drawable/ic_google" />
+
+            <TextView
+                style="@style/TextViewRegularNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_padding_10dp"
+                android:gravity="left"
+                android:text="Đăng nhập bằng Google" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_15dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.1dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:background="@color/grey_600" />
+
+            <TextView
+                style="@style/TextViewRegularNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_padding_10dp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="HOẶC" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0.1dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:background="@color/grey_600" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
